@@ -1,41 +1,52 @@
 package com.sparta.sort;
 
-public class SortManager implements Sorter{
+import java.time.Duration;
+import java.time.Instant;
+import java.util.Random;
+import java.util.Scanner;
+
+public class SortManager {
+
     public static void main(String[] args) {
-        SortManager b = new SortManager();
-        int[] test = {1, 5, 66, 2};
-        b.sortArray(test);
-        for (int sortedNum : test) {
-            System.out.println(sortedNum);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please choose a sorting algorithm (0:Bubble):");
+        int algoChoice = scanner.nextInt();
+        System.out.println("Please choose the array length:");
+        int lengthChoice = scanner.nextInt();
+        scanner.close();
+
+        int[] randomArr = generateRandomArray(lengthChoice);
+        int[] sortedArr = new int[lengthChoice];
+
+        printArrayElements(randomArr);
+        System.out.println("Algorithm to be used: " + Algorithms.values()[algoChoice]);
+
+        var startTime = System.currentTimeMillis();
+        if(Algorithms.values()[algoChoice] == Algorithms.BUBBLE) {
+            sortedArr = new BubbleSorter().sortArray(randomArr);
         }
+        long stopTime = System.currentTimeMillis();
+        printArrayElements(sortedArr);
+        System.out.println("Time to complete " +
+                Algorithms.values()[algoChoice] +
+                "sort: " + (stopTime - startTime) + "ms");
     }
 
-    /**
-     * Performs a BubbleSort with a swap flag to stop as soon as an iteration with no swaps occurs.
-     * @param input the array of integers to be sorted
-     * @return pointer to the sorted array (in this case same pointer as the input)
-     */
-    public int[] sortArray(int[] input) {
-        boolean noSwaps;
-        do {
-            noSwaps = true;
-            for (int i = 0; i<input.length - 1; i++) {
-                // Look at the first number in the list.
-                int this_val = i;
-                int next_val = i + 1;
-                //  Is the next number smaller than the current number? If so,
-                //     swap the two numbers around. If not, do not swap.
-                if (input[this_val] > input[this_val+1]) {
-                    noSwaps = false; // If any numbers were swapped, repeat from step 1.
-                    int temp = input[this_val];
-                    input[this_val] = input[next_val];
-                    input[next_val] = temp;
-                }
-                // Move to the next number along in the list and make this the current number
-            }// If the end of the list is reached without any swaps being made,
-            // then the list is ordered and the algorithm can stop
-        } while (!noSwaps);
-        return input;
+    private static void printArrayElements(int[] array) {
+        System.out.print("Current values of array: ");
+        for (int i: array) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
+    private static int[] generateRandomArray(int length) {
+        Random random = new Random();
+        int[] result = new int[length];
+        for (int i = 0; i < length ; i++) {
+            result[i] = random.nextInt(1, 1000);
+        }
+        return result;
     }
 
 }
