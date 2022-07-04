@@ -4,22 +4,25 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class SortManager {
-    private static boolean continueProgram = true;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         SorterFactory sorterFactory = new SorterFactory();
         Sorter sorter;
 
-        while(continueProgram) {
+        while(true) {
             System.out.println("\n" + sorterFactory.getUserInstructions() + " 9: Exit the program");
-
             int algoChoice = scanner.nextInt();
-            if(algoChoice==9) {continueProgram=false; break;}
+            if(algoChoice==9) break;   // User chose to exit the program
             sorter = sorterFactory.getSorter(algoChoice);
-            if(sorter==null) continue;
+            if(sorter==null) continue; // Let user pick a valid sorter
 
             System.out.println("Please choose the array length:");
-            int lengthChoice = scanner.nextInt();
+            int lengthChoice;
+            do{
+                lengthChoice = scanner.nextInt();
+                if(lengthChoice < 1) System.out.println("Please enter a positive number for length");
+            } while(lengthChoice < 1);
+
 
             int[] randomArr = generateRandomArray(lengthChoice);
 
