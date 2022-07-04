@@ -1,7 +1,5 @@
 package com.sparta.sort;
 
-import java.time.Duration;
-import java.time.Instant;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -9,8 +7,14 @@ public class SortManager {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please choose a sorting algorithm (0:Bubble):");
+        SortFactory sortFactory = new SortFactory();
+
+        System.out.println(sortFactory.getUserInstructions());
         int algoChoice = scanner.nextInt();
+
+        Sorter sorter = sortFactory.getSorter(algoChoice);
+
+        /*
         System.out.println("Please choose the array length:");
         int lengthChoice = scanner.nextInt();
         scanner.close();
@@ -18,7 +22,7 @@ public class SortManager {
         int[] randomArr = generateRandomArray(lengthChoice);
         int[] sortedArr = new int[lengthChoice];
 
-        printArrayElements(randomArr);
+        bubble.printArrayElements();
         System.out.println("Algorithm to be used: " + Algorithms.values()[algoChoice]);
 
         var startTime = System.currentTimeMillis();
@@ -26,18 +30,12 @@ public class SortManager {
             sortedArr = new BubbleSorter().sortArray(randomArr);
         }
         long stopTime = System.currentTimeMillis();
-        printArrayElements(sortedArr);
+        bubble.printArrayElements();
         System.out.println("Time to complete " +
                 Algorithms.values()[algoChoice] +
                 "sort: " + (stopTime - startTime) + "ms");
-    }
 
-    private static void printArrayElements(int[] array) {
-        System.out.print("Current values of array: ");
-        for (int i: array) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+         */
     }
 
     private static int[] generateRandomArray(int length) {
