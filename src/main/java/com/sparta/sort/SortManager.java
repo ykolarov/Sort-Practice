@@ -22,7 +22,7 @@ public class SortManager {
         int[] randomArr = generateRandomArray(lengthChoice);
         int[] sortedArr = new int[lengthChoice];
 
-        bubble.printArrayElements();
+        printArrayElements();
         System.out.println("Algorithm to be used: " + Algorithms.values()[algoChoice]);
 
         var startTime = System.currentTimeMillis();
@@ -34,8 +34,7 @@ public class SortManager {
         System.out.println("Time to complete " +
                 Algorithms.values()[algoChoice] +
                 "sort: " + (stopTime - startTime) + "ms");
-
-         */
+        */
     }
 
     private static int[] generateRandomArray(int length) {
