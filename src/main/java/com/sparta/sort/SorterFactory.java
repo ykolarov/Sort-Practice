@@ -17,12 +17,16 @@ public class SorterFactory {
     }
 
     public Sorter getSorter(int type) {
-        if(Options.BUBBLE == Options.values()[type]) return new BubbleSorter();
-        if(Options.MERGE == Options.values()[type]) return new MergeSorter();
-        if(Options.BINARY == Options.values()[type]) return new BinarySorter();
-        if(Options.INSERTION == Options.values()[type]) return new InsertionSorter();
-        if(Options.QUICK == Options.values()[type]) return new QuickSorter();
-        return null; // if type argument is invalid
+        try {
+            if (Options.BUBBLE == Options.values()[type]) return new BubbleSorter();
+            if (Options.MERGE == Options.values()[type]) return new MergeSorter();
+            if (Options.BINARY == Options.values()[type]) return new BinarySorter();
+            if (Options.INSERTION == Options.values()[type]) return new InsertionSorter();
+            if (Options.QUICK == Options.values()[type]) return new QuickSorter();
+        } catch(ArrayIndexOutOfBoundsException e) {
+            System.out.println("Invalid option, please try again");// if type argument is invalid
+        }
+        return null;
     }
 
     public String getUserInstructions() {

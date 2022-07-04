@@ -4,37 +4,35 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class SortManager {
-
+    private static boolean continueProgram = true;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         SorterFactory sorterFactory = new SorterFactory();
+        Sorter sorter;
 
-        System.out.println(sorterFactory.getUserInstructions());
-        int algoChoice = scanner.nextInt();
+        while(continueProgram) {
+            System.out.println("\n" + sorterFactory.getUserInstructions() + " 9: Exit the program");
 
-        Sorter sorter = sorterFactory.getSorter(algoChoice);
+            int algoChoice = scanner.nextInt();
+            if(algoChoice==9) {continueProgram=false; break;}
+            sorter = sorterFactory.getSorter(algoChoice);
+            if(sorter==null) continue;
 
-        /*
-        System.out.println("Please choose the array length:");
-        int lengthChoice = scanner.nextInt();
-        scanner.close();
+            System.out.println("Please choose the array length:");
+            int lengthChoice = scanner.nextInt();
 
-        int[] randomArr = generateRandomArray(lengthChoice);
-        int[] sortedArr = new int[lengthChoice];
+            int[] randomArr = generateRandomArray(lengthChoice);
 
-        printArrayElements();
-        System.out.println("Algorithm to be used: " + Algorithms.values()[algoChoice]);
+            printArrayElements(randomArr);
+            //TODO: System.out.println("Algorithm to be used: " + Algorithms.values()[algoChoice]);
 
-        var startTime = System.currentTimeMillis();
-        if(Algorithms.values()[algoChoice] == Algorithms.BUBBLE) {
-            sortedArr = new BubbleSorter().sortArray(randomArr);
+            long startTime = System.currentTimeMillis();
+            int[] sortedArr = sorter.sortArray(randomArr);
+            long stopTime = System.currentTimeMillis();
+            System.out.println("Time to complete " + "sort: " + (stopTime - startTime) + "ms");
+
+            printArrayElements(sortedArr);
         }
-        long stopTime = System.currentTimeMillis();
-        bubble.printArrayElements();
-        System.out.println("Time to complete " +
-                Algorithms.values()[algoChoice] +
-                "sort: " + (stopTime - startTime) + "ms");
-        */
     }
 
     private static int[] generateRandomArray(int length) {
@@ -44,6 +42,13 @@ public class SortManager {
             result[i] = random.nextInt(1, 1000);
         }
         return result;
+    }
+
+    private static void printArrayElements(int[] array) {
+        for (int i: array) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
 
 }
