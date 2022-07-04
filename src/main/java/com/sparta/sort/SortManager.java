@@ -7,12 +7,12 @@ public class SortManager {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        SortFactory sortFactory = new SortFactory();
+        SorterFactory sorterFactory = new SorterFactory();
 
-        System.out.println(sortFactory.getUserInstructions());
+        System.out.println(sorterFactory.getUserInstructions());
         int algoChoice = scanner.nextInt();
 
-        Sorter sorter = sortFactory.getSorter(algoChoice);
+        Sorter sorter = sorterFactory.getSorter(algoChoice);
 
         /*
         System.out.println("Please choose the array length:");

@@ -1,6 +1,21 @@
 package com.sparta.sort;
 
-public class SortFactory {
+public class SorterFactory {
+
+    private enum Options {
+        BUBBLE(0),
+        MERGE(1),
+        BINARY(2),
+        INSERTION(3),
+        QUICK(4);
+
+        final int index;
+
+        Options(int index) {
+            this.index = index;
+        }
+    }
+
     public Sorter getSorter(int type) {
         if(Options.BUBBLE == Options.values()[type]) return new BubbleSorter();
         if(Options.MERGE == Options.values()[type]) return new MergeSorter();
@@ -20,17 +35,5 @@ public class SortFactory {
         return result + ")";
     }
 
-    private enum Options {
-        BUBBLE(0),
-        MERGE(1),
-        BINARY(2),
-        INSERTION(3),
-        QUICK(4);
 
-        final int index;
-
-        Options(int index) {
-            this.index = index;
-        }
-    }
 }
