@@ -1,4 +1,4 @@
-package com.sparta.sort;
+package com.sparta.sortModel;
 
 import java.util.Arrays;
 
@@ -18,7 +18,7 @@ public class MergeSorter implements Sorter{
         return mergeTwoArrays(firstHalf, secondHalf);
     }
 
-    protected int[] mergeTwoArrays(int[] firstArr, int[] secondArr) {
+    public int[] mergeTwoArrays(int[] firstArr, int[] secondArr) {
         int[] result = new int[firstArr.length + secondArr.length];
         int firstCounter, secondCounter, resCounter;
         firstCounter = secondCounter = resCounter = 0;

@@ -1,5 +1,6 @@
-package com.sparta.sort;
+package com.sparta.sortTest;
 
+import com.sparta.sortModel.BubbleSorter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

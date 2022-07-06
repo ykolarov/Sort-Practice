@@ -1,4 +1,4 @@
-package com.sparta.sort;
+package com.sparta.sortModel;
 
 public class QuickSorter implements Sorter{
     @Override

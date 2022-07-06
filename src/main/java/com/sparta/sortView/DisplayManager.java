@@ -1,28 +1,41 @@
-package com.sparta.sort;
+package com.sparta.sortView;
+
+
+import com.sparta.sortController.SortManager;
+import com.sparta.sortModel.Sorter;
+import com.sparta.sortModel.SorterFactory;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Random;
 import java.util.Scanner;
-import org.apache.logging.log4j.*;
-public class SortManager {
 
-    public static Logger logger = LogManager.getLogger("My Logger"); // loads property file
+public class DisplayManager {
 
-    public static void main(String[] args) {
-        // low lvl -> high level
-        // trace, debug, info, warn, error, fatal
-        logger.info("Info message");
+    private final Logger logger;
+    private SorterFactory sorterFactory;
+    private Sorter sorter;
 
+    public DisplayManager() {
+         // TODO: refactor this class to reduce it to a single purpose
+         this.logger = SortManager.logger;
+         sorterFactory = new SorterFactory();
+    }
 
+    public void start() {
         Scanner scanner = new Scanner(System.in);
-        SorterFactory sorterFactory = new SorterFactory();
-        Sorter sorter;
 
         while(true) {
             System.out.println("\n" + sorterFactory.getUserInstructions() + " 9: Exit the program");
             int algoChoice = scanner.nextInt();
-            if(algoChoice==9) break;   // User chose to exit the program
+            if(algoChoice==9) {
+                logger.info("User chose to exit the application");
+                break;
+            }
             sorter = sorterFactory.getSorter(algoChoice);
-            if(sorter==null) continue; // Let user pick a valid sorter
+            if(sorter==null) {
+                logger.warn("User picked an invalid option for a sorting algorithm");
+                continue;
+            }
 
             System.out.println("Please choose the array length:");
             int lengthChoice;
@@ -31,6 +44,9 @@ public class SortManager {
                 if(lengthChoice < 1) System.out.println("Please enter a positive number for length");
             } while(lengthChoice < 1);
 
+            if(lengthChoice>=1000)
+                logger.warn("User inputted a big number for length: " + lengthChoice);
+            else logger.info("Length input:" + lengthChoice);
 
             int[] randomArr = generateRandomArray(lengthChoice);
 
@@ -61,5 +77,4 @@ public class SortManager {
         }
         System.out.println();
     }
-
 }
