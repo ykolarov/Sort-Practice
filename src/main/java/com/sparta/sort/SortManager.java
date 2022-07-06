@@ -2,9 +2,17 @@ package com.sparta.sort;
 
 import java.util.Random;
 import java.util.Scanner;
-
+import org.apache.logging.log4j.*;
 public class SortManager {
+
+    public static Logger logger = LogManager.getLogger("My Logger"); // loads property file
+
     public static void main(String[] args) {
+        // low lvl -> high level
+        // trace, debug, info, warn, error, fatal
+        logger.info("Info message");
+
+
         Scanner scanner = new Scanner(System.in);
         SorterFactory sorterFactory = new SorterFactory();
         Sorter sorter;
