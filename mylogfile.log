@@ -1,6 +1,0 @@
-File Log: [INFO ] 2022-07-06 11:53:46,476 main <-My Logger-> - Info message
-File Log: [INFO ] 2022-07-06 11:55:26,661 main <-My Logger-> - Info message
-File Log: [INFO ] 2022-07-06 12:04:01,109 main <-My Logger-> - Info message
-File Log: [WARN ] 2022-07-06 12:04:04,845 main <-My Logger-> - User inputted a big number for length: 1005
-File Log: [WARN ] 2022-07-06 14:52:43,428 main <-SortManger Logger-> - User inputted a big number for length: 2222
-File Log: [INFO ] 2022-07-06 14:52:45,279 main <-SortManger Logger-> - User chose to exit the application
