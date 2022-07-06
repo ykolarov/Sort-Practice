@@ -1,66 +1,27 @@
-File Log: [INFO ] 2022-07-06 23:05:31,481 main <-SortManger Logger-> - Asking user to choose algorithm option
-File Log: [INFO ] 2022-07-06 23:05:31,488 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [INFO ] 2022-07-06 23:05:38,256 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [INFO ] 2022-07-06 23:05:39,727 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [INFO ] 2022-07-06 23:05:40,417 main <-SortManger Logger-> - User chose option of Merge sort
-File Log: [INFO ] 2022-07-06 23:05:40,426 main <-SortManger Logger-> - Asking user to input a new integer for length of array
-File Log: [INFO ] 2022-07-06 23:05:47,228 main <-SortManger Logger-> - Length input:9
-File Log: [INFO ] 2022-07-06 23:05:47,237 main <-SortManger Logger-> - App successfully presented output using Merge sort
-File Log: [INFO ] 2022-07-06 23:05:47,237 main <-SortManger Logger-> - Asking user to choose algorithm option
-File Log: [INFO ] 2022-07-06 23:05:47,237 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [INFO ] 2022-07-06 23:05:48,266 main <-SortManger Logger-> - User chose option of Merge sort
-File Log: [INFO ] 2022-07-06 23:05:48,266 main <-SortManger Logger-> - Asking user to input a new integer for length of array
-File Log: [ERROR] 2022-07-06 23:05:49,898 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "9999999999999999999999"
-File Log: [INFO ] 2022-07-06 23:05:49,898 main <-SortManger Logger-> - Asking user to input a new integer for length of array
-File Log: [INFO ] 2022-07-06 23:05:51,677 main <-SortManger Logger-> - Length input:9
-File Log: [INFO ] 2022-07-06 23:05:51,677 main <-SortManger Logger-> - App successfully presented output using Merge sort
-File Log: [INFO ] 2022-07-06 23:05:51,677 main <-SortManger Logger-> - Asking user to choose algorithm option
-File Log: [INFO ] 2022-07-06 23:05:51,677 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [INFO ] 2022-07-06 23:05:53,388 main <-SortManger Logger-> - User chose to exit the application
-File Log: [INFO ] 2022-07-06 23:08:21,924 main <-SortManger Logger-> - Asking user to choose algorithm option
-File Log: [INFO ] 2022-07-06 23:08:21,925 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [ERROR] 2022-07-06 23:08:23,187 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "dog"
-File Log: [INFO ] 2022-07-06 23:08:23,187 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [ERROR] 2022-07-06 23:08:25,206 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "gamer"
-File Log: [INFO ] 2022-07-06 23:08:25,206 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [INFO ] 2022-07-06 23:08:25,926 main <-SortManger Logger-> - User chose option of Merge sort
-File Log: [INFO ] 2022-07-06 23:08:25,927 main <-SortManger Logger-> - Asking user to input a new integer for length of array
-File Log: [ERROR] 2022-07-06 23:08:28,860 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "my"
-File Log: [INFO ] 2022-07-06 23:08:28,860 main <-SortManger Logger-> - Asking user to input a new integer for length of array
-File Log: [ERROR] 2022-07-06 23:08:28,860 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "name"
-File Log: [INFO ] 2022-07-06 23:08:28,860 main <-SortManger Logger-> - Asking user to input a new integer for length of array
-File Log: [ERROR] 2022-07-06 23:08:28,860 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "jeff"
-File Log: [INFO ] 2022-07-06 23:08:28,860 main <-SortManger Logger-> - Asking user to input a new integer for length of array
-File Log: [ERROR] 2022-07-06 23:08:34,027 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "my"
-File Log: [INFO ] 2022-07-06 23:08:34,027 main <-SortManger Logger-> - Asking user to input a new integer for length of array
-File Log: [ERROR] 2022-07-06 23:08:34,027 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "name"
-File Log: [INFO ] 2022-07-06 23:08:34,027 main <-SortManger Logger-> - Asking user to input a new integer for length of array
-File Log: [INFO ] 2022-07-06 23:08:34,027 main <-SortManger Logger-> - Length of the array has been chosen successfully:8
-File Log: [INFO ] 2022-07-06 23:08:34,035 main <-SortManger Logger-> - App successfully presented output using Merge sort
-File Log: [INFO ] 2022-07-06 23:08:34,035 main <-SortManger Logger-> - Asking user to choose algorithm option
-File Log: [INFO ] 2022-07-06 23:08:34,035 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [INFO ] 2022-07-06 23:08:52,615 main <-SortManger Logger-> - User chose to exit the application
-File Log: [INFO ] 2022-07-06 23:09:05,249 main <-SortManger Logger-> - Asking user to choose algorithm option
-File Log: [INFO ] 2022-07-06 23:09:05,255 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [ERROR] 2022-07-06 23:09:07,295 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "8mojang"
-File Log: [INFO ] 2022-07-06 23:09:07,295 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [ERROR] 2022-07-06 23:09:09,890 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "3mojang"
-File Log: [INFO ] 2022-07-06 23:09:09,890 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [INFO ] 2022-07-06 23:09:11,005 main <-SortManger Logger-> - User chose option of Insertion sort
-File Log: [INFO ] 2022-07-06 23:09:11,005 main <-SortManger Logger-> - Asking user to input a new integer for length of array
-File Log: [INFO ] 2022-07-06 23:09:12,475 main <-SortManger Logger-> - Length of the array has been chosen successfully:1
-File Log: [INFO ] 2022-07-06 23:09:12,484 main <-SortManger Logger-> - App successfully presented output using Insertion sort
-File Log: [INFO ] 2022-07-06 23:09:12,484 main <-SortManger Logger-> - Asking user to choose algorithm option
-File Log: [INFO ] 2022-07-06 23:09:12,484 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [INFO ] 2022-07-06 23:09:17,287 main <-SortManger Logger-> - User chose to exit the application
-File Log: [INFO ] 2022-07-06 23:11:30,964 main <-SortManger Logger-> - Asking user to choose algorithm option
-File Log: [INFO ] 2022-07-06 23:11:30,973 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [WARN ] 2022-07-06 23:11:33,203 main <-SortManger Logger-> - User picked an invalid option for a sorting algorithm
-File Log: [INFO ] 2022-07-06 23:11:33,203 main <-SortManger Logger-> - Asking user to choose algorithm option
-File Log: [INFO ] 2022-07-06 23:11:33,203 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [WARN ] 2022-07-06 23:11:38,784 main <-SortManger Logger-> - User picked an invalid option for a sorting algorithm
-File Log: [INFO ] 2022-07-06 23:11:38,784 main <-SortManger Logger-> - Asking user to choose algorithm option
-File Log: [INFO ] 2022-07-06 23:11:38,784 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [ERROR] 2022-07-06 23:11:39,923 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "dog"
-File Log: [INFO ] 2022-07-06 23:11:39,925 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
-File Log: [INFO ] 2022-07-06 23:11:41,913 main <-SortManger Logger-> - User chose to exit the application
+File Log: [INFO ] 2022-07-06 23:28:02,276 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-06 23:28:02,283 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [ERROR] 2022-07-06 23:28:04,638 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "bubble"
+java.lang.NumberFormatException: For input string: "bubble"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:784) ~[?:?]
+	at com.sparta.sortView.DisplayManager.getIntFromUser(DisplayManager.java:62) ~[classes/:?]
+	at com.sparta.sortView.DisplayManager.display(DisplayManager.java:23) ~[classes/:?]
+	at com.sparta.sortController.SortManager.main(SortManager.java:15) ~[classes/:?]
+File Log: [INFO ] 2022-07-06 23:28:04,652 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-06 23:28:06,393 main <-SortManger Logger-> - User chose option of Bubble sort
+File Log: [INFO ] 2022-07-06 23:28:06,393 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [ERROR] 2022-07-06 23:28:08,972 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "999999999999999999999"
+java.lang.NumberFormatException: For input string: "999999999999999999999"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:784) ~[?:?]
+	at com.sparta.sortView.DisplayManager.getIntFromUser(DisplayManager.java:62) ~[classes/:?]
+	at com.sparta.sortView.DisplayManager.display(DisplayManager.java:32) ~[classes/:?]
+	at com.sparta.sortController.SortManager.main(SortManager.java:15) ~[classes/:?]
+File Log: [INFO ] 2022-07-06 23:28:08,973 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-06 23:28:10,148 main <-SortManger Logger-> - Length of the array has been chosen successfully:9
+File Log: [INFO ] 2022-07-06 23:28:10,163 main <-SortManger Logger-> - App successfully presented output using Bubble sort
+File Log: [INFO ] 2022-07-06 23:28:10,164 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-06 23:28:10,164 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-06 23:28:11,329 main <-SortManger Logger-> - User chose to exit the application

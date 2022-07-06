@@ -3,9 +3,6 @@ import com.sparta.sortController.SortManager;
 import com.sparta.sortModel.AbstractFactory;
 import com.sparta.sortModel.AbstractSorter;
 import org.apache.logging.log4j.Logger;
-
-import java.util.Arrays;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class DisplayManager implements View {
@@ -40,7 +37,7 @@ public class DisplayManager implements View {
                 displayAlgorithmInAction(sorter, sorter.generateRandomArray(lengthChoice));
                 logger.info("App successfully presented output using " + sorter.getDescription());
             } catch(NullPointerException e) { // in case sorter is null from the factory
-                logger.warn("User picked an invalid option for a sorting algorithm: " + algoChoice);
+                logger.warn("User picked an invalid option for a sorting algorithm: " + algoChoice, e);
             } // continues while loop to ask user to choose a valid sorting algorithm next
         }
         scanner.close();
@@ -64,7 +61,7 @@ public class DisplayManager implements View {
             try{
                 userInput = Integer.parseInt(scanner.next());;
             } catch(NumberFormatException e) {
-                logger.error("EXCEPTION CAUGHT: User entered bad input for length : " + e.getMessage());
+                logger.error("EXCEPTION CAUGHT: User entered bad input for length : " + e.getMessage(), e);
                 System.out.println("Entered number is invalid, please try again");
                 continue;
             }
