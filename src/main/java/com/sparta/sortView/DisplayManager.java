@@ -24,24 +24,24 @@ public class DisplayManager implements View {
             logger.info("Asking user to choose algorithm option");
             System.out.println("\n" + factory.userInstructions() + " 9: Exit the program");
             int algoChoice = getIntFromUser(scanner, 0, "algorithm option");
-            if(algoChoice==9) {
+            if (algoChoice == 9) {
                 logger.info("User chose to exit the application");
                 break;
             }
             AbstractSorter sorter = factory.create(algoChoice);
-            if(sorter ==null) {
-                logger.warn("User picked an invalid option for a sorting algorithm");
-                continue;
-            }
-            logger.info("User chose option of " + sorter.getDescription());
-            System.out.println("Please enter a number for the length of the array");
-            int lengthChoice = getIntFromUser(scanner, 1, "length of array");
-            if(lengthChoice>=1000)
-                logger.warn("User inputted a big number for length: " + lengthChoice);
-            else logger.info("Length of the array has been chosen successfully:" + lengthChoice);
+            try {
+                logger.info("User chose option of " + sorter.getDescription());
+                System.out.println("Please enter a number for the length of the array");
+                int lengthChoice = getIntFromUser(scanner, 1, "length of array");
+                if (lengthChoice >= 1000)
+                    logger.warn("User inputted a big number for length: " + lengthChoice);
+                else logger.info("Length of the array has been chosen successfully:" + lengthChoice);
 
-            displayAlgorithmInAction(sorter, sorter.generateRandomArray(lengthChoice));
-            logger.info("App successfully presented output using " + sorter.getDescription());
+                displayAlgorithmInAction(sorter, sorter.generateRandomArray(lengthChoice));
+                logger.info("App successfully presented output using " + sorter.getDescription());
+            } catch(NullPointerException e) { // in case sorter is null from the factory
+                logger.warn("User picked an invalid option for a sorting algorithm: " + algoChoice);
+            } // continues while loop to ask user to choose a valid sorting algorithm next
         }
         scanner.close();
     }
@@ -60,8 +60,8 @@ public class DisplayManager implements View {
     private int getIntFromUser(Scanner scanner, int minAcceptable, String reason) {
         int userInput = Integer.MIN_VALUE; // smaller than minimum acceptable value
         do{
+            logger.info("Asking user to input a new integer for " + reason);
             try{
-                logger.info("Asking user to input a new integer for " + reason);
                 userInput = Integer.parseInt(scanner.next());;
             } catch(NumberFormatException e) {
                 logger.error("EXCEPTION CAUGHT: User entered bad input for length : " + e.getMessage());
