@@ -2,8 +2,7 @@ package com.sparta.sortModel;
 
 import java.util.Arrays;
 
-public class MergeSorter implements Sorter{
-
+public class MergeSorter extends AbstractSorter {
 
     @Override
     public int[] sortArray(int[] arrayToSort) {
@@ -44,4 +43,8 @@ public class MergeSorter implements Sorter{
         return result;
     }
 
+    @Override
+    public String getDescription() {
+        return "Merge sort";
+    }
 }

@@ -1,6 +1,6 @@
 package com.sparta.sortModel;
 
-public class BubbleSorter implements Sorter {
+public class BubbleSorter extends AbstractSorter {
 
     /**
      * Performs a BubbleSort with a swap flag to stop as soon as an iteration with no swaps occurs.
@@ -30,4 +30,8 @@ public class BubbleSorter implements Sorter {
         return input;
     }
 
+    @Override
+    public String getDescription() {
+        return "Bubble sort";
+    }
 }

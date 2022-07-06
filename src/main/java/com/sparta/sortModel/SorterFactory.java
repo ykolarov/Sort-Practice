@@ -1,6 +1,6 @@
 package com.sparta.sortModel;
 
-public class SorterFactory {
+public class SorterFactory implements AbstractFactory<AbstractSorter> {
 
     private enum Options {
         BUBBLE(0),
@@ -15,8 +15,8 @@ public class SorterFactory {
             this.index = index;
         }
     }
-
-    public Sorter getSorter(int type) {
+    @Override
+    public AbstractSorter create(int type) {
         try {
             if (Options.BUBBLE == Options.values()[type]) return new BubbleSorter();
             if (Options.MERGE == Options.values()[type]) return new MergeSorter();
@@ -29,7 +29,7 @@ public class SorterFactory {
         return null;
     }
 
-    public String getUserInstructions() {
+    public String userInstructions() {
         String result = "Please choose a sorting algorithm:\n(";
         result += "0: Bubble | ";
         result += "1: Merge | ";

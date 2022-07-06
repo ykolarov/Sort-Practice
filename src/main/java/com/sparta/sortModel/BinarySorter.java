@@ -3,7 +3,7 @@ package com.sparta.sortModel;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BinarySorter implements Sorter {
+public class BinarySorter extends AbstractSorter {
     @Override
     public int[] sortArray(int[] arrayToSort) {
         // Create binary tree from unsorted array
@@ -32,6 +32,12 @@ public class BinarySorter implements Sorter {
         if(currentNode.rightChild != null) sortBinaryTreeToList(currentNode.rightChild, list);
         // 4. if you have an up go to your up - return
     }
+
+    @Override
+    public String getDescription() {
+        return "Binary sort";
+    }
+
     private class Node {
         int value;
         Node leftChild;
