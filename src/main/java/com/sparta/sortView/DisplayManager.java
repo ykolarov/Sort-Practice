@@ -34,24 +34,15 @@ public class DisplayManager implements View {
                     logger.warn("User inputted a big number for length: " + lengthChoice);
                 else logger.info("Length of the array has been chosen successfully:" + lengthChoice);
 
-                displayAlgorithmInAction(sorter, sorter.generateRandomArray(lengthChoice));
+                String result = sorter.getResultFromRunningAlgorithm(lengthChoice);
+                System.out.println(result);
+
                 logger.info("App successfully presented output using " + sorter.getDescription());
             } catch(NullPointerException e) { // in case sorter is null from the factory
                 logger.warn("User picked an invalid option for a sorting algorithm: " + algoChoice, e);
             } // continues while loop to ask user to choose a valid sorting algorithm next
         }
         scanner.close();
-    }
-
-    private void displayAlgorithmInAction(AbstractSorter sorter, int[] randomArr) {
-        printArrayElements(randomArr);
-        System.out.println("Algorithm to be used: " + sorter.getDescription());
-        long startTime = System.currentTimeMillis();
-        int[] sortedArr = sorter.sortArray(randomArr);
-        long stopTime = System.currentTimeMillis();
-        System.out.println("Time to complete " + sorter.getDescription()
-                + ": " + (stopTime - startTime) + "ms");
-        printArrayElements(sortedArr);
     }
 
     private int getIntFromUser(Scanner scanner, int minAcceptable, String reason) {
