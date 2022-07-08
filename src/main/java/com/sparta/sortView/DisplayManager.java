@@ -20,7 +20,7 @@ public class DisplayManager implements View {
         Scanner scanner = new Scanner(System.in);
         while(true) {
             System.out.println(factory.userInstructions());
-            System.out.print(" " + VALUE_TO_EXIT + ": Exit the program");
+            System.out.println(" " + VALUE_TO_EXIT + ": Exit the program");
             int algoChoice = getIntFromUser(scanner, 0, "algorithm option");
             if (algoChoice == VALUE_TO_EXIT) break;
 

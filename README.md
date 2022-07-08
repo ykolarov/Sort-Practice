@@ -1,6 +1,8 @@
 # Sort Manager
 ## by Yanaki Kolarov
 
+![An example of the program in action](resources/ProgramExample.png)
+
 ### This sort manager project is following the MVC structure:
 - Model 
   - Sorter Interface

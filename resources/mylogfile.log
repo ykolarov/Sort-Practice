@@ -175,3 +175,22 @@ File Log: [INFO ] 2022-07-08 16:02:16,910 main <-SortManger Logger-> - App succe
 File Log: [INFO ] 2022-07-08 16:02:16,910 main <-SortManger Logger-> - Asking user to choose algorithm option
 File Log: [INFO ] 2022-07-08 16:02:16,910 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
 File Log: [INFO ] 2022-07-08 16:12:14,513 main <-SortManger Logger-> - Asking user to input an integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:39:31,273 main <-SortManger Logger-> - Asking user to input an integer for algorithm option
+File Log: [ERROR] 2022-07-08 16:39:33,518 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: ""
+java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:678) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:784) ~[?:?]
+	at com.sparta.sortView.DisplayManager.getIntFromUser(DisplayManager.java:80) ~[classes/:?]
+	at com.sparta.sortView.DisplayManager.display(DisplayManager.java:24) ~[classes/:?]
+	at com.sparta.sortController.SortManager.main(SortManager.java:17) ~[classes/:?]
+File Log: [INFO ] 2022-07-08 16:39:33,545 main <-SortManger Logger-> - Asking user to input an integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:39:53,462 main <-SortManger Logger-> - Asking user to input an integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:39:56,753 main <-SortManger Logger-> - User chose option of Merge sort
+File Log: [INFO ] 2022-07-08 16:39:56,753 main <-SortManger Logger-> - Asking user to input an integer for length of array
+File Log: [INFO ] 2022-07-08 16:39:59,130 main <-SortManger Logger-> - Length of the array has been chosen successfully:10
+File Log: [INFO ] 2022-07-08 16:40:03,753 main <-SortManger Logger-> - Asking user to input an integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:40:05,259 main <-SortManger Logger-> - User successfully compared previous algorithm with Bubble sort
+File Log: [INFO ] 2022-07-08 16:40:05,259 main <-SortManger Logger-> - App successfully presented output using Merge sort
+File Log: [INFO ] 2022-07-08 16:40:05,259 main <-SortManger Logger-> - Asking user to input an integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:40:10,750 main <-SortManger Logger-> - User chose to exit the application
