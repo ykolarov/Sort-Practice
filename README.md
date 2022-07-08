@@ -16,10 +16,13 @@
 #### Concrete sorters in detail:
 - Bubble sort
   - Makes use of a do-while loop which runs at least once, but then only continues if a swap occurred in the previous iteration.
-Once no swaps have been made after a full traversal of the array, we can be sure that the items are sorted and as such we can stop iterating for improved efficiency. A swap occurs when an item is greater than the item following it, causing them to switch places with one another.
+  - A swap occurs when an item is greater than the item following it, causing them to switch places with one another.
+  - If no swaps occurred during a full traversal, the items must be sorted and we can stop iterating for improved efficiency.
 - Merge sort
-  - Splits arrays into subarrays until each subarray is of size 1.
-  - Combines the subarrays in a careful manner to ensure the outcome array is sorted.
-  - Utilizes recursion for ease of implementation.
+  - Splits arrays recursively into sub-arrays until each subarray is of size 1.
+  - Merges the sub-arrays recursively in a careful manner to ensure the outcome joint array is sorted.
+  - Recursion ends when each sub-array has been merged successfully back into a sorted array.
 - Binary sort
-  - Utilizes recursion and the Adaptor design pattern for ease of implementation.
+  - Converts an unsorted array into a binary tree, sorting the data in the process.
+  - Utilizes the Adaptor design pattern to provide an intermediary or an adaptor which extracts data from the binary tree and returns it as a sorted int array.
+  - Utilizes recursion for ease of work with the binary tree due to its nature.
