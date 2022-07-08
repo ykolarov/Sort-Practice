@@ -22,6 +22,17 @@ class MergeSorterTest {
         assertArrayEquals(res, mergeSorter.sortArray(a));
     }
     @Test
+    void sortArrayNull() {
+        int[] res = new int[]{};
+        assertArrayEquals(res, mergeSorter.sortArray(null));
+    }
+    @Test
+    void sortArrayEmpty() {
+        int[] a = {};
+        int[] res = new int[]{};
+        assertArrayEquals(res, mergeSorter.sortArray(a));
+    }
+    @Test
     void sortArrayReverse() {
         int[] a = {9,5,5,3,1,1,1};
         int[] res = new int[]{1,1,1,3,5,5,9};

@@ -29,4 +29,18 @@ class BubbleSorterTest {
         int[] expected = {5, 6, 6, 6, 8, 66};
         assertArrayEquals(expected, actual);
     }
+
+    @Test
+    void bubbleSortEmpty() {
+        int[] actual = {};
+        bubbleSorter.sortArray(actual);
+        int[] expected = {};
+        assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    void bubbleSortNull() {
+        int[] expected = {};
+        assertArrayEquals(expected,  bubbleSorter.sortArray(null));
+    }
 }

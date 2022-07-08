@@ -6,6 +6,7 @@ public class MergeSorter extends AbstractSorter {
 
     @Override
     public int[] sortArray(int[] arrayToSort) {
+        if(arrayToSort == null) return new int[] {}; // empty array instead of null to avoid null crash
         int middle = arrayToSort.length/2;
         if(middle == 0) return arrayToSort;
 
