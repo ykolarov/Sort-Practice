@@ -25,3 +25,153 @@ File Log: [INFO ] 2022-07-06 23:28:10,163 main <-SortManger Logger-> - App succe
 File Log: [INFO ] 2022-07-06 23:28:10,164 main <-SortManger Logger-> - Asking user to choose algorithm option
 File Log: [INFO ] 2022-07-06 23:28:10,164 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
 File Log: [INFO ] 2022-07-06 23:28:11,329 main <-SortManger Logger-> - User chose to exit the application
+File Log: [INFO ] 2022-07-07 16:45:14,758 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-07 16:45:14,766 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-07 16:45:17,503 main <-SortManger Logger-> - User chose option of Merge sort
+File Log: [INFO ] 2022-07-07 16:45:17,503 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-07 16:45:19,592 main <-SortManger Logger-> - Length of the array has been chosen successfully:10
+File Log: [INFO ] 2022-07-07 16:45:19,602 main <-SortManger Logger-> - App successfully presented output using Merge sort
+File Log: [INFO ] 2022-07-07 16:45:19,602 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-07 16:45:19,602 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-07 16:47:11,905 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-07 16:47:11,911 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-07 16:47:13,291 main <-SortManger Logger-> - User chose option of Merge sort
+File Log: [INFO ] 2022-07-07 16:47:13,291 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-07 16:47:14,903 main <-SortManger Logger-> - Length of the array has been chosen successfully:299
+File Log: [INFO ] 2022-07-07 16:47:14,918 main <-SortManger Logger-> - App successfully presented output using Merge sort
+File Log: [INFO ] 2022-07-07 16:47:14,919 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-07 16:47:14,919 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-07 16:47:22,225 main <-SortManger Logger-> - User chose to exit the application
+File Log: [INFO ] 2022-07-08 15:44:30,277 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:44:30,285 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:44:33,412 main <-SortManger Logger-> - User chose option of Bubble sort
+File Log: [INFO ] 2022-07-08 15:44:33,412 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 15:44:35,398 main <-SortManger Logger-> - Length of the array has been chosen successfully:10
+File Log: [INFO ] 2022-07-08 15:44:40,569 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [WARN ] 2022-07-08 15:44:56,282 main <-SortManger Logger-> - User picked an invalid option for a sorting algorithm: 0
+java.lang.NullPointerException: Cannot invoke "com.sparta.sortModel.AbstractSorter.getResultFromRunningAlgorithm(int[])" because "sorter2" is null
+	at com.sparta.sortView.DisplayManager.allowUserToCompareAlgorithms(DisplayManager.java:55) ~[classes/:?]
+	at com.sparta.sortView.DisplayManager.display(DisplayManager.java:39) ~[classes/:?]
+	at com.sparta.sortController.SortManager.main(SortManager.java:17) ~[classes/:?]
+File Log: [INFO ] 2022-07-08 15:44:56,300 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:44:56,300 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:45:41,346 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:45:41,354 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:45:43,126 main <-SortManger Logger-> - User chose option of Bubble sort
+File Log: [INFO ] 2022-07-08 15:45:43,126 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 15:45:46,188 main <-SortManger Logger-> - Length of the array has been chosen successfully:100
+File Log: [INFO ] 2022-07-08 15:45:49,633 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:45:55,095 main <-SortManger Logger-> - App successfully presented output using Bubble sort
+File Log: [INFO ] 2022-07-08 15:45:55,096 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:45:55,096 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:46:10,390 main <-SortManger Logger-> - User chose to exit the application
+File Log: [INFO ] 2022-07-08 15:47:33,013 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:47:33,020 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:47:34,856 main <-SortManger Logger-> - User chose option of Bubble sort
+File Log: [INFO ] 2022-07-08 15:47:34,857 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 15:47:35,593 main <-SortManger Logger-> - Length of the array has been chosen successfully:10
+File Log: [INFO ] 2022-07-08 15:47:41,579 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:47:44,460 main <-SortManger Logger-> - App successfully presented output using Bubble sort
+File Log: [INFO ] 2022-07-08 15:47:44,460 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:47:44,460 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:49:48,402 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:49:48,409 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:49:51,089 main <-SortManger Logger-> - User chose option of Bubble sort
+File Log: [INFO ] 2022-07-08 15:49:51,089 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 15:49:52,877 main <-SortManger Logger-> - Length of the array has been chosen successfully:1
+File Log: [INFO ] 2022-07-08 15:49:56,904 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:50:06,840 main <-SortManger Logger-> - App successfully presented output using Bubble sort
+File Log: [INFO ] 2022-07-08 15:50:06,840 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:50:06,840 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:50:48,177 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:50:48,184 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:50:51,768 main <-SortManger Logger-> - User chose option of Merge sort
+File Log: [INFO ] 2022-07-08 15:50:51,768 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 15:50:52,281 main <-SortManger Logger-> - Length of the array has been chosen successfully:3
+File Log: [INFO ] 2022-07-08 15:50:54,541 main <-SortManger Logger-> - App successfully presented output using Merge sort
+File Log: [INFO ] 2022-07-08 15:50:54,542 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:50:54,542 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:53:20,224 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:53:20,231 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:54:35,078 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:54:35,086 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:54:36,541 main <-SortManger Logger-> - User chose option of Merge sort
+File Log: [INFO ] 2022-07-08 15:54:36,541 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 15:54:37,906 main <-SortManger Logger-> - Length of the array has been chosen successfully:3
+File Log: [INFO ] 2022-07-08 15:54:39,668 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [ERROR] 2022-07-08 15:54:42,615 main <-SortManger Logger-> - EXCEPTION CAUGHT: User entered bad input for length : For input string: "gog"
+java.lang.NumberFormatException: For input string: "gog"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:668) ~[?:?]
+	at java.lang.Integer.parseInt(Integer.java:784) ~[?:?]
+	at com.sparta.sortView.DisplayManager.getIntFromUser(DisplayManager.java:74) ~[classes/:?]
+	at com.sparta.sortView.DisplayManager.allowUserToCompareAlgorithms(DisplayManager.java:55) ~[classes/:?]
+	at com.sparta.sortView.DisplayManager.display(DisplayManager.java:40) ~[classes/:?]
+	at com.sparta.sortController.SortManager.main(SortManager.java:17) ~[classes/:?]
+File Log: [INFO ] 2022-07-08 15:54:42,637 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [WARN ] 2022-07-08 15:54:45,167 main <-SortManger Logger-> - User picked an invalid option for a sorting algorithm in comparison: 
+java.lang.NullPointerException: Cannot invoke "com.sparta.sortModel.AbstractSorter.getResultFromRunningAlgorithm(int[])" because "sorter2" is null
+	at com.sparta.sortView.DisplayManager.allowUserToCompareAlgorithms(DisplayManager.java:58) ~[classes/:?]
+	at com.sparta.sortView.DisplayManager.display(DisplayManager.java:40) ~[classes/:?]
+	at com.sparta.sortController.SortManager.main(SortManager.java:17) ~[classes/:?]
+File Log: [INFO ] 2022-07-08 15:54:45,170 main <-SortManger Logger-> - App successfully presented output using Merge sort
+File Log: [INFO ] 2022-07-08 15:54:45,170 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:54:45,170 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:54:49,885 main <-SortManger Logger-> - User chose option of Bubble sort
+File Log: [INFO ] 2022-07-08 15:54:49,886 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 15:54:51,388 main <-SortManger Logger-> - Length of the array has been chosen successfully:1
+File Log: [INFO ] 2022-07-08 15:54:53,017 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:54:54,314 main <-SortManger Logger-> - App successfully presented output using Bubble sort
+File Log: [INFO ] 2022-07-08 15:54:54,314 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:54:54,314 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:57:48,663 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:57:48,671 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:57:53,183 main <-SortManger Logger-> - User chose option of Merge sort
+File Log: [INFO ] 2022-07-08 15:57:53,183 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 15:57:57,498 main <-SortManger Logger-> - Length of the array has been chosen successfully:6
+File Log: [INFO ] 2022-07-08 15:58:07,088 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 15:58:10,626 main <-SortManger Logger-> - User successfully compared previous algorithm with Bubble sort
+File Log: [INFO ] 2022-07-08 15:58:10,626 main <-SortManger Logger-> - App successfully presented output using Merge sort
+File Log: [INFO ] 2022-07-08 15:58:10,626 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 15:58:10,627 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:01:02,249 main <-SortManger Logger-> - User chose option of Merge sort
+File Log: [INFO ] 2022-07-08 16:01:02,250 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 16:01:03,615 main <-SortManger Logger-> - Length of the array has been chosen successfully:2
+File Log: [INFO ] 2022-07-08 16:01:05,850 main <-SortManger Logger-> - App successfully presented output using Merge sort
+File Log: [INFO ] 2022-07-08 16:01:05,850 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 16:01:05,850 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:01:08,806 main <-SortManger Logger-> - User chose option of Merge sort
+File Log: [INFO ] 2022-07-08 16:01:08,806 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 16:01:11,482 main <-SortManger Logger-> - Length of the array has been chosen successfully:2
+File Log: [INFO ] 2022-07-08 16:01:14,093 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [ERROR] 2022-07-08 16:01:16,132 main <-SortManger Logger-> - User picked an invalid option for a sorting algorithm in comparison: 
+java.lang.NullPointerException: Cannot invoke "com.sparta.sortModel.AbstractSorter.getResultFromRunningAlgorithm(int[])" because "sorter2" is null
+	at com.sparta.sortView.DisplayManager.allowUserToCompareAlgorithms(DisplayManager.java:58) ~[classes/:?]
+	at com.sparta.sortView.DisplayManager.display(DisplayManager.java:40) ~[classes/:?]
+	at com.sparta.sortController.SortManager.main(SortManager.java:17) ~[classes/:?]
+File Log: [INFO ] 2022-07-08 16:01:16,157 main <-SortManger Logger-> - App successfully presented output using Merge sort
+File Log: [INFO ] 2022-07-08 16:01:16,157 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 16:01:16,158 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:02:05,200 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 16:02:05,208 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:02:06,576 main <-SortManger Logger-> - User chose option of Merge sort
+File Log: [INFO ] 2022-07-08 16:02:06,577 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 16:02:07,572 main <-SortManger Logger-> - Length of the array has been chosen successfully:2
+File Log: [INFO ] 2022-07-08 16:02:09,106 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:02:10,061 main <-SortManger Logger-> - User successfully compared previous algorithm with Merge sort
+File Log: [INFO ] 2022-07-08 16:02:10,061 main <-SortManger Logger-> - App successfully presented output using Merge sort
+File Log: [INFO ] 2022-07-08 16:02:10,062 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 16:02:10,062 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:02:11,845 main <-SortManger Logger-> - User chose option of Merge sort
+File Log: [INFO ] 2022-07-08 16:02:11,845 main <-SortManger Logger-> - Asking user to input a new integer for length of array
+File Log: [INFO ] 2022-07-08 16:02:13,594 main <-SortManger Logger-> - Length of the array has been chosen successfully:1
+File Log: [INFO ] 2022-07-08 16:02:14,741 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [ERROR] 2022-07-08 16:02:16,891 main <-SortManger Logger-> - User picked an invalid option for a sorting algorithm in comparison: 
+java.lang.NullPointerException: Cannot invoke "com.sparta.sortModel.AbstractSorter.getResultFromRunningAlgorithm(int[])" because "sorter2" is null
+	at com.sparta.sortView.DisplayManager.allowUserToCompareAlgorithms(DisplayManager.java:58) ~[classes/:?]
+	at com.sparta.sortView.DisplayManager.display(DisplayManager.java:40) ~[classes/:?]
+	at com.sparta.sortController.SortManager.main(SortManager.java:17) ~[classes/:?]
+File Log: [INFO ] 2022-07-08 16:02:16,910 main <-SortManger Logger-> - App successfully presented output using Merge sort
+File Log: [INFO ] 2022-07-08 16:02:16,910 main <-SortManger Logger-> - Asking user to choose algorithm option
+File Log: [INFO ] 2022-07-08 16:02:16,910 main <-SortManger Logger-> - Asking user to input a new integer for algorithm option
+File Log: [INFO ] 2022-07-08 16:12:14,513 main <-SortManger Logger-> - Asking user to input an integer for algorithm option

@@ -6,6 +6,8 @@ import com.sparta.sortModel.SorterFactory;
 import com.sparta.sortView.DisplayManager;
 import com.sparta.sortView.View;
 import org.apache.logging.log4j.*;
+
+
 public class SortManager {
     public static Logger logger = LogManager.getLogger("SortManger Logger");
 
